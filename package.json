@@ -1,0 +1,32 @@
+{
+  "name": "pay-cost-h5",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "classnames": "2.3.1",
+    "dayjs": "^1.11.3",
+    "lib-flexible": "0.3.2",
+    "query-string": "7.0.0",
+    "react": "17.0.0",
+    "react-captcha-code": "1.0.7",
+    "react-dom": "17.0.0",
+    "react-router-dom": "5.2.0",
+    "zarm": "2.8.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "consola": "^2.15.3",
+    "less": "^4.1.3",
+    "postcss-pxtorem": "6.0.0",
+    "vite": "^2.9.9",
+    "vite-plugin-style-import": "^2.0.0"
+  }
+}
