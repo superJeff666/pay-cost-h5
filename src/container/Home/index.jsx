@@ -6,6 +6,7 @@ import PopupType from "@/components/PopupType";
 import PopupDate from "@/components/PopupDate";
 import CustomIcon from "@/components/CustomIcon";
 import PopupAddBill from '@/components/PopupAddBill';
+import Empty from "@/components/Empty";
 import { get, REFRESH_STATE, LOAD_STATE } from '@/utils';
 import s from './style.module.less'
 const Home = () => {
@@ -125,7 +126,7 @@ const Home = () => {
                     key={index}
                  />)
              }
-           </Pull>: null
+           </Pull>: <Empty/>
          }
      </div>
      <div className={s.add} onClick={addToggle}><CustomIcon type='tianjia' /></div>
