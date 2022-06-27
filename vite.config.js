@@ -36,13 +36,18 @@ export default defineConfig({
         target:'http://127.0.0.1:7002',
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, '') // 将 /api 重写为空
+      },
+      '/public': {
+        target: 'http://127.0.0.1:7002',
+        changeOrigin: true
       }
     }
   },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      'utils': path.resolve(__dirname, 'src/utils')
+      'utils': path.resolve(__dirname, 'src/utils'),
+      'config': path.resolve(__dirname, 'src/config')
     }
   }
 })
